@@ -104,7 +104,17 @@
     
     return cell;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if(indexPath.row==1)
+    {
+    [self performSegueWithIdentifier:@"screenpagesegu" sender:self];
 
+   //ScreeningsPage *sp=[[ScreeningsPage alloc] init];
+ // [self.navigationController pushViewController:sp animated:YES];
+    }
+}
 #pragma mark - IBActions -
 
 
