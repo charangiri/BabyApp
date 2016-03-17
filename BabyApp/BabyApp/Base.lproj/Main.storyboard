@@ -388,7 +388,6 @@
                                 <exclude reference="sXA-Lg-Yg0"/>
                                 <exclude reference="Aoc-aM-bEh"/>
                                 <exclude reference="TJy-6p-KIk"/>
-                                <exclude reference="cIu-Ka-cGA"/>
                                 <exclude reference="nBC-We-nbs"/>
                                 <exclude reference="pn5-kM-htF"/>
                                 <exclude reference="200-7a-VQC"/>
@@ -406,6 +405,7 @@
                                 <exclude reference="2BS-ae-DLv"/>
                                 <exclude reference="ZCZ-uu-TFA"/>
                                 <exclude reference="q4r-OG-X5V"/>
+                                <exclude reference="cIu-Ka-cGA"/>
                                 <exclude reference="VBG-dv-45R"/>
                                 <exclude reference="tWo-hb-SLk"/>
                                 <exclude reference="k41-Qr-NG8"/>
@@ -421,7 +421,6 @@
                                 <include reference="sXA-Lg-Yg0"/>
                                 <include reference="Aoc-aM-bEh"/>
                                 <include reference="TJy-6p-KIk"/>
-                                <include reference="cIu-Ka-cGA"/>
                                 <include reference="nBC-We-nbs"/>
                                 <include reference="pn5-kM-htF"/>
                                 <include reference="200-7a-VQC"/>
@@ -439,6 +438,7 @@
                                 <include reference="2BS-ae-DLv"/>
                                 <include reference="ZCZ-uu-TFA"/>
                                 <include reference="q4r-OG-X5V"/>
+                                <include reference="cIu-Ka-cGA"/>
                                 <include reference="VBG-dv-45R"/>
                                 <include reference="tWo-hb-SLk"/>
                                 <exclude reference="k41-Qr-NG8"/>
@@ -1052,7 +1052,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyG-sX-smO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343.5" y="-2138.25"/>
+            <point key="canvasLocation" x="513" y="-2138"/>
         </scene>
         <!--Baby Booklet-->
         <scene sceneID="oXr-sY-PRQ">
@@ -1467,10 +1467,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3U-NC-RPd">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="healthBooklet.png"/>
+                                <connections>
+                                    <action selector="helthBookletClicked:" destination="09H-zJ-xMF" eventType="touchUpInside" id="vVq-1k-Bws"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-cK-8qf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="enyc.png"/>
+                                <connections>
+                                    <action selector="encyclopediaClicked:" destination="09H-zJ-xMF" eventType="touchUpInside" id="pFl-Zi-vLK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1574,6 +1580,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="zck-ct-apZ" kind="show" identifier="screenpagesegu" id="7nK-AJ-vDe"/>
+                        <segue destination="ALA-Cj-thC" kind="show" identifier="encyclopediatapscrollersegu" id="qpY-59-97d"/>
+                        <segue destination="Rqw-rf-a80" kind="show" identifier="growthsummarysegu" id="a5T-JE-65k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baT-cW-47f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1612,7 +1620,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wux-Dq-JC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="-863"/>
+            <point key="canvasLocation" x="1573" y="-554"/>
+        </scene>
+        <!--Encyclopedia Tap Scroller-->
+        <scene sceneID="cfW-ZL-ZUc">
+            <objects>
+                <viewController id="ALA-Cj-thC" customClass="EncyclopediaTapScroller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ls5-W8-9XG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9YA-fQ-gRL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1q9-fG-1Fz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="Mhx-Ug-HPj" kind="show" identifier="medicationcategorysegu" id="oFB-mf-bHR"/>
+                        <segue destination="qnc-Ly-otL" kind="show" identifier="immunisationtypesegu" id="hAq-wS-lZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hB-7H-JwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="-1658"/>
+        </scene>
+        <!--Medication Category-->
+        <scene sceneID="O7o-eC-uXB">
+            <objects>
+                <viewController id="Mhx-Ug-HPj" customClass="MedicationCategory" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LQS-0i-X0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="dD6-gx-eaJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w4X-5Z-JHn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLf-eq-8D1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="-2138"/>
+        </scene>
+        <!--Immunisation Type-->
+        <scene sceneID="mmf-ST-6fm">
+            <objects>
+                <viewController id="qnc-Ly-otL" customClass="ImmunisationType" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i5J-xC-5NO"/>
+                        <viewControllerLayoutGuide type="bottom" id="woE-EJ-Hln"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Va-De-hy9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubn-9y-xbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373" y="-1922"/>
         </scene>
         <!--Bio Data Table View Controller-->
         <scene sceneID="x5U-Eu-W56">
@@ -2098,7 +2167,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4J-qv-IwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1944" y="-1352.25"/>
+            <point key="canvasLocation" x="2098" y="-1489"/>
         </scene>
         <!--Growth Screening-->
         <scene sceneID="uWs-AK-qXY">
@@ -2194,6 +2263,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgy-Ze-mmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2558" y="72"/>
+        </scene>
+        <!--Growth Summary-->
+        <scene sceneID="V48-5o-Be2">
+            <objects>
+                <viewController id="Rqw-rf-a80" customClass="GrowthSummary" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oO4-xz-Z3T"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIN-Hg-WzB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D1S-OV-tpY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwT-lr-whR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="-1069"/>
         </scene>
         <!--Screening Parental View Controller-->
         <scene sceneID="Cmw-wv-xHl">
@@ -3040,7 +3128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qsd-fB-kZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634" y="-1328.25"/>
+            <point key="canvasLocation" x="2655" y="-1245"/>
         </scene>
         <!--Slide Navigation Controller-->
         <scene sceneID="2DS-hs-XDA">

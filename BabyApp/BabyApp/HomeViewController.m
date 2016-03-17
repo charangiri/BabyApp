@@ -13,6 +13,17 @@
 {
     NSArray *titlesArray,*imagesNames,*colorArray;
 }
+- (IBAction)helthBookletClicked:(id)sender {
+    NSLog(@"helthBookletClicked");
+    
+    //growthsummarysegu
+}
+- (IBAction)encyclopediaClicked:(id)sender
+{
+    NSLog(@"encyclopediaClicked");
+    [self performSegueWithIdentifier:@"encyclopediatapscrollersegu" sender:self];
+
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -110,10 +121,12 @@
     if(indexPath.row==1)
     {
     [self performSegueWithIdentifier:@"screenpagesegu" sender:self];
-
-   //ScreeningsPage *sp=[[ScreeningsPage alloc] init];
- // [self.navigationController pushViewController:sp animated:YES];
     }
+    else if(indexPath.row==2)
+    {
+        [self performSegueWithIdentifier:@"growthsummarysegu" sender:self];
+    }
+    
 }
 #pragma mark - IBActions -
 
