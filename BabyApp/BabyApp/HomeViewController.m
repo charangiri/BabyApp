@@ -15,7 +15,8 @@
 }
 - (IBAction)helthBookletClicked:(id)sender {
     NSLog(@"helthBookletClicked");
-    
+    [self performSegueWithIdentifier:@"healthBookletsegue" sender:self];
+
     //growthsummarysegu
 }
 - (IBAction)encyclopediaClicked:(id)sender
