@@ -66,6 +66,10 @@
 		D82C28EB1C8F6FDC005798EA /* ScreeningExamination.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C28EA1C8F6FDC005798EA /* ScreeningExamination.m */; };
 		D82C28EE1C8F7012005798EA /* ScreeningOutcomeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C28ED1C8F7012005798EA /* ScreeningOutcomeOptions.m */; };
 		D82C28F11C8F7041005798EA /* ScreeningsOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C28F01C8F7041005798EA /* ScreeningsOutcome.m */; };
+		D85F35481CAB01C200B3F4FE /* MedicationCategoryDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D85F35471CAB01C200B3F4FE /* MedicationCategoryDetail.m */; };
+		D85F354F1CAB0A9200B3F4FE /* ScreeningSummaeryDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D85F354A1CAB0A9200B3F4FE /* ScreeningSummaeryDetail.m */; };
+		D85F35501CAB0A9200B3F4FE /* ScreeningSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85F354C1CAB0A9200B3F4FE /* ScreeningSummaryViewController.m */; };
+		D85F35511CAB0A9200B3F4FE /* ScreenSumaryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D85F354E1CAB0A9200B3F4FE /* ScreenSumaryDetailCell.m */; };
 		D86EC0531C99EF0E00E3B176 /* MedicationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D86EC0521C99EF0E00E3B176 /* MedicationCategory.m */; };
 		D86EC0561C99EF4B00E3B176 /* ImmunisationType.m in Sources */ = {isa = PBXBuildFile; fileRef = D86EC0551C99EF4B00E3B176 /* ImmunisationType.m */; };
 		D86EC0591C99FD7C00E3B176 /* GrowthSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = D86EC0581C99FD7C00E3B176 /* GrowthSummary.m */; };
@@ -204,6 +208,14 @@
 		D82C28ED1C8F7012005798EA /* ScreeningOutcomeOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeningOutcomeOptions.m; sourceTree = "<group>"; };
 		D82C28EF1C8F7041005798EA /* ScreeningsOutcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreeningsOutcome.h; sourceTree = "<group>"; };
 		D82C28F01C8F7041005798EA /* ScreeningsOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeningsOutcome.m; sourceTree = "<group>"; };
+		D85F35461CAB01C200B3F4FE /* MedicationCategoryDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationCategoryDetail.h; sourceTree = "<group>"; };
+		D85F35471CAB01C200B3F4FE /* MedicationCategoryDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationCategoryDetail.m; sourceTree = "<group>"; };
+		D85F35491CAB0A9200B3F4FE /* ScreeningSummaeryDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreeningSummaeryDetail.h; sourceTree = "<group>"; };
+		D85F354A1CAB0A9200B3F4FE /* ScreeningSummaeryDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeningSummaeryDetail.m; sourceTree = "<group>"; };
+		D85F354B1CAB0A9200B3F4FE /* ScreeningSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreeningSummaryViewController.h; sourceTree = "<group>"; };
+		D85F354C1CAB0A9200B3F4FE /* ScreeningSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeningSummaryViewController.m; sourceTree = "<group>"; };
+		D85F354D1CAB0A9200B3F4FE /* ScreenSumaryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSumaryDetailCell.h; sourceTree = "<group>"; };
+		D85F354E1CAB0A9200B3F4FE /* ScreenSumaryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSumaryDetailCell.m; sourceTree = "<group>"; };
 		D86EC0511C99EF0E00E3B176 /* MedicationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationCategory.h; sourceTree = "<group>"; };
 		D86EC0521C99EF0E00E3B176 /* MedicationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationCategory.m; sourceTree = "<group>"; };
 		D86EC0541C99EF4B00E3B176 /* ImmunisationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImmunisationType.h; sourceTree = "<group>"; };
@@ -410,6 +422,12 @@
 				D86EC0571C99FD7C00E3B176 /* GrowthSummary.h */,
 				D86EC0581C99FD7C00E3B176 /* GrowthSummary.m */,
 				D8AB15BE1C8E1AD80062DAFE /* ScreeningParentalViewController.h */,
+				D85F35491CAB0A9200B3F4FE /* ScreeningSummaeryDetail.h */,
+				D85F354A1CAB0A9200B3F4FE /* ScreeningSummaeryDetail.m */,
+				D85F354B1CAB0A9200B3F4FE /* ScreeningSummaryViewController.h */,
+				D85F354C1CAB0A9200B3F4FE /* ScreeningSummaryViewController.m */,
+				D85F354D1CAB0A9200B3F4FE /* ScreenSumaryDetailCell.h */,
+				D85F354E1CAB0A9200B3F4FE /* ScreenSumaryDetailCell.m */,
 				A13FC7F71C7748AC00362A32 /* LaunchScreen.storyboard */,
 				A13FC7FA1C7748AC00362A32 /* Info.plist */,
 				A13FC7F21C7748AC00362A32 /* BabyApp.xcdatamodeld */,
@@ -451,6 +469,8 @@
 				D8970FB61C98A6FC009C752B /* EncyclopediaTapScroller.h */,
 				D8970FB71C98A6FC009C752B /* EncyclopediaTapScroller.m */,
 				D86EC0511C99EF0E00E3B176 /* MedicationCategory.h */,
+				D85F35461CAB01C200B3F4FE /* MedicationCategoryDetail.h */,
+				D85F35471CAB01C200B3F4FE /* MedicationCategoryDetail.m */,
 				D86EC0521C99EF0E00E3B176 /* MedicationCategory.m */,
 				D86EC0541C99EF4B00E3B176 /* ImmunisationType.h */,
 				D86EC0551C99EF4B00E3B176 /* ImmunisationType.m */,
@@ -692,6 +712,7 @@
 				A10EB6311C78BC3B002EBC59 /* BioDataTableViewController.m in Sources */,
 				D82C28F11C8F7041005798EA /* ScreeningsOutcome.m in Sources */,
 				A10EB6201C789F81002EBC59 /* HeartTypeTableViewCell.m in Sources */,
+				D85F35481CAB01C200B3F4FE /* MedicationCategoryDetail.m in Sources */,
 				A10EB5F91C786B9A002EBC59 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				A10EB6371C78BD83002EBC59 /* ProfilePicTableViewCell.m in Sources */,
 				D82C28EB1C8F6FDC005798EA /* ScreeningExamination.m in Sources */,
@@ -708,6 +729,7 @@
 				A10EB61D1C789F72002EBC59 /* RadioTypeTableViewCell.m in Sources */,
 				D86EC0591C99FD7C00E3B176 /* GrowthSummary.m in Sources */,
 				D8970FB81C98A6FC009C752B /* EncyclopediaTapScroller.m in Sources */,
+				D85F354F1CAB0A9200B3F4FE /* ScreeningSummaeryDetail.m in Sources */,
 				D86EC0531C99EF0E00E3B176 /* MedicationCategory.m in Sources */,
 				D86EC0561C99EF4B00E3B176 /* ImmunisationType.m in Sources */,
 				A10EB61A1C789F5B002EBC59 /* ProfileTableViewCell.m in Sources */,
@@ -717,8 +739,10 @@
 				A10EB5FC1C786B9A002EBC59 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				A13FC7E81C7748AC00362A32 /* main.m in Sources */,
 				D8AB15B81C8DDAE30062DAFE /* ScreeningViewController.m in Sources */,
+				D85F35501CAB0A9200B3F4FE /* ScreeningSummaryViewController.m in Sources */,
 				A13FC7F41C7748AC00362A32 /* BabyApp.xcdatamodeld in Sources */,
 				A10EB65B1C7B7F59002EBC59 /* BirthRecordTableViewController.m in Sources */,
+				D85F35511CAB0A9200B3F4FE /* ScreenSumaryDetailCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
