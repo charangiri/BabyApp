@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MedicationCategory : UIViewController<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic) UITableView *medicationCategoryTable;
+@interface MedicationCategory : UIViewController
 
 @end
